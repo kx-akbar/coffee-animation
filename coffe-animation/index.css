@@ -1,0 +1,94 @@
+/* Style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 14%;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.box i{
+    font-size: 210px;
+    color: #894D2E;
+    margin-bottom: 9%;
+    background: none;
+}
+
+.box-mover-1{
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    width: 100px;
+    height: 20px;
+    animation-name: box-mover;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 200ms;
+    margin-top: 5px;
+    margin-left: 23px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.box-mover-2{
+    position: relative;
+    z-index: -1;
+    top: 70px;
+    width: 120px;
+    height: 24px;
+    animation-name: box-mover;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 400ms;
+    margin-top: 5px;
+    margin-left: 23px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.box-mover-3{
+    position: relative;
+    z-index: -1;
+    top: 40px;
+    width: 140px;
+    height: 26px;
+    animation-name: box-mover;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 500ms;
+    margin-top: 5px;
+    margin-left: 23px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+@keyframes box-mover{
+    0%{
+        position: relative;
+        z-index: -1;
+        top: 100px;
+    }
+
+    100%{
+        position: relative;
+        z-index: -1;
+        top: 0;
+    }
+}
